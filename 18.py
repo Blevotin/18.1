@@ -1,4 +1,5 @@
 class House():
+
     def __init__(self, name, number_of_floors):
         self.name = name
         self.number_of_floors = number_of_floors
@@ -14,7 +15,7 @@ class House():
     def __len__(self):
         print(self.number_of_floors)
     def __str__(self):
-        print(self.name)
+        print(f"Название: {self.name}, Количество этажей {self.number_of_floors})")
 
 a = House("Жк", 23)
 b = House("Жк2", 22)
@@ -24,4 +25,6 @@ a.__str__()
 a.__len__()
 b.__str__()
 b.__len__()
+
+
 
