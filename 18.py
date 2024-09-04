@@ -13,18 +13,19 @@ class House():
         else:
             print("Такого этажа не существует")
     def __len__(self):
-        print(self.number_of_floors)
+        return  (self.number_of_floors)
     def __str__(self):
-        print(f"Название: {self.name}, Количество этажей {self.number_of_floors})")
+        return f"Название: {self.name}, Количество этажей {self.number_of_floors})"
 
 a = House("Жк", 23)
 b = House("Жк2", 22)
 a.go_to(23)
 print("\n")
-a.__str__()
-a.__len__()
-b.__str__()
-b.__len__()
+print(a)
+len(a)
+
+print(b)
+len(b)
 
 
 
